@@ -1,0 +1,19 @@
+
+
+<h1>{{ title }}</h1>
+<p>Welcome to {{ title }}</p>
+    
+{{# if condition }}
+    <b>condition true</b>
+{{ else }}
+    <b>condition false</b>
+{{/if}}
+
+{{!--{{# each anyArray }}
+    {{this}}
+{{/each}}--}}
+
+{{# each anyArray as |value key|}}
+    <br>
+    {{key}} : {{value}} 
+{{/each}}    

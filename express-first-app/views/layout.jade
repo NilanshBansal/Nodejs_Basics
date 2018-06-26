@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    ul
+      li MY Text
+    input(type='text').class-name#idname
+    
+    - var condition=true; //overwriting passed variable
+    
+    if condition
+      p it's true
+    - var anyArray=[12,2,3,4]  
+    each value in anyArray
+      p=value
+    block content
